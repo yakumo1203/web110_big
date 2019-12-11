@@ -1,0 +1,115 @@
+/* BIG Website */
+
+html {
+    background-color: #ccc;
+}
+
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+.fullwifth {
+    width:100%;
+}
+
+div.gallery{
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:0.25%;
+}
+
+/*START LEFT Column styles*/
+section{
+    float:left;
+    width:65%;
+}
+
+/*END LEFT Column styles*/
+
+/*START Right Column styles*/
+aside{
+    float:right;
+    width:34%;
+}
+
+/*END Right Column styles*/
+
+footer{
+    padding:2em; /*Top Right Bottom Left*/
+    text-align:center;
+    clear: both;
+}
+
+ul {
+    z-index:2
+}
+
+/*START - EMBED RESPONSIVELY STYLES*/
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; 
+} 
+
+.embed-container iframe{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+/*END - EMBED RESPONSIVELY STYLES*/
+
+
+/* HIDE AGENDA VIEW CALENDAR*/
+div.embed-container.agenda-view{
+    display: none;
+}
+
+/* CALENDAR RULES for MOBILE*/
+@media all and (max-width:1200px) {
+    
+    /*Show Agenda View Calendar*/
+   div.embed-container.agenda-view{
+    display: block;
+    }
+    
+    /*Hide Month View Calendar*/
+   div.embed-container.month-view{
+    display: none;
+    }   
+}
+/* MOBILE STYLES*/
+
+@media all and (max-width:602px) {
+    
+    main {
+        width: 100%;
+    }
+    
+    section{
+        float:none;
+        width:100%;
+    }
+
+    aside{
+        float:none;
+        width:100%;
+    }  
+    
+}
+
+
+
